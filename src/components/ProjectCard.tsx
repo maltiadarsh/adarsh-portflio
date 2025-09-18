@@ -31,10 +31,12 @@ const ProjectCard = ({ title, description, image, technologies, liveUrl, githubU
             </Button>
           )}
           {githubUrl && (
-            <Button size="sm" variant="secondary" className="hover:bg-secondary/80">
-              <Github className="h-4 w-4 mr-2" />
-              Code
-            </Button>
+            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+              <Button size="sm" variant="secondary" className="hover:bg-secondary/80">
+                <Github className="h-4 w-4 mr-2" />
+                Code
+              </Button>
+            </a>
           )}
         </div>
       </div>
